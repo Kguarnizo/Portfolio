@@ -30,22 +30,22 @@ const Navigation = () => {
           <ul>
             <li>
               <Link to="/about">
-                <span className="nav-item">about</span>
+                <span>about</span>
               </Link>
             </li>
             <li>
               <Link to="/portfolio">
-                <span className="nav-item">portfolio</span>
+                <span>portfolio</span>
               </Link>
             </li>
             <li>
               <Link to="/skills">
-                <span className="nav-item">skills</span>
+                <span>skills</span>
               </Link>
             </li>
             <li>
               <Link to="/contact">
-                <span className="nav-item">contact</span>
+                <span>contact</span>
               </Link>
             </li>
           </ul>
