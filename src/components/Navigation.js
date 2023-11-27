@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -26,24 +26,16 @@ const Navigation = () => {
           </div>
           <ul className={menuOpen ? "open" : ""}>
             <li>
-                <Link to="/about" onClick={closeMenu}>
-                <span>about</span>
-              </Link>
+                <NavLink to="/about" onClick={closeMenu}>about</NavLink>
             </li>
             <li>
-                <Link to="/portfolio" onClick={closeMenu}>
-                <span>portfolio</span>
-              </Link>
+                <NavLink to="/portfolio" onClick={closeMenu}>portfolio</NavLink>
             </li>
             <li>
-                <Link to="/skills" onClick={closeMenu}>
-                <span>skills</span>
-              </Link>
+                <NavLink to="/skills" onClick={closeMenu}>skills</NavLink>
             </li>
             <li>
-                <Link to="/contact" onClick={closeMenu}>
-                <span>contact</span>
-              </Link>
+                <NavLink to="/contact" onClick={closeMenu}>contact</NavLink>
             </li>
           </ul>
     </nav>

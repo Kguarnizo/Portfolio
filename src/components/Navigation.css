@@ -1,3 +1,7 @@
+.active {
+    background-color: #D80ED8;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,10 +35,12 @@ nav ul li a {
     text-decoration: none;
     color: white;
     margin: 0 1.6rem 0 0;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
 }
 
-nav ul li span:hover {
-    opacity: 0.5;
+nav ul li a:not(.active):hover {
+    color: #D80ED8;
 }    
 
 nav .menu {
@@ -85,7 +91,7 @@ nav .menu span{
     }
 
     nav ul li {
-        width: 100%;
+        width: auto;
         text-align: center;
     }
 
