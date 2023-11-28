@@ -1,8 +1,7 @@
 .home-container {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: 8rem 0 0 5rem;
-    text-wrap: balance;
+    padding: 6rem 10rem;
 }
 
 .home-desc {
@@ -14,7 +13,7 @@
 }
 
 #self-name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bolder;
     color: white;
 }
@@ -22,7 +21,7 @@
 #self-title {
     font-size: 1.5rem;
     text-align: center;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     color: white;
     margin: 0;
     padding: 0;
@@ -31,10 +30,11 @@
 .home-img {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-img {
-    max-width: 55%; 
+.home-img img {
+    width: 450px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(199, 114, 196, 0.477);
@@ -47,7 +47,7 @@ img {
     align-items: center;
 }
 
-.social-container ul{
+.social-container ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -60,9 +60,9 @@ img {
     font-size: 1.5rem;
 }
 
-.more-links{
-  display:flex;
-  gap: 1rem;
+.more-links {
+    display: flex;
+    gap: 1rem;
 }
 
 #learn-more, #view-resume {
@@ -73,63 +73,30 @@ img {
     border: 0.8rem solid rgba(216, 14, 216, 0.613);
     background: #D80ED8;
     border-radius: 5rem;
-    width:10rem;
-}
-
-
-@media (max-width: 1070px) {
-    .home-container {
-    margin: 9rem 0 0 5rem;
-    text-wrap: balance;
-    }
+    width: 10rem;
 }
 
 @media (max-width: 992px) {
     .home-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        margin: 3rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
     }
-    
+
     .home-desc,
     .home-img {
         text-align: center;
         align-items: center;
     }
-    
+
     .home-img {
-        margin-top: 2rem;
         order: -1;
     }
-}
 
-@media (max-width: 568px) {
-    .home-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        margin: 2rem 0;
-    }
-    img {
-        max-width: auto;     
-    }   
-
-    .home-img{
-        margin-top: 0;
+    #self-name {
+        font-size: 3rem;
     }
 }
-
-@media (max-width: 390px) {
-    .home-container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        margin: 10rem 0;
-    }
-}
-
 
