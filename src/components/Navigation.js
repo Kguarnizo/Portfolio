@@ -29,7 +29,7 @@ const Navigation = () => {
                 <NavLink to="/about" onClick={closeMenu}>about</NavLink>
             </li>
             <li>
-                <NavLink to="/portfolio" onClick={closeMenu}>projects</NavLink>
+                <NavLink to="/projects" onClick={closeMenu}>projects</NavLink>
             </li>
             <li>
                 <NavLink to="/skills" onClick={closeMenu}>skills</NavLink>

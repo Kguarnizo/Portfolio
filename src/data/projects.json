@@ -1,0 +1,18 @@
+{
+    "projects" : [
+        {
+            "title": "MedLab Help",
+            "description": "Medlab Help is a user-friendly web app that simplifies medical jargon, focusing on routine medical tests. Built on RESTful API principles, it efficiently retrieves lab test data from PostgreSQL, including 100+ records from external CSV files. The responsive design ensures a seamless user experience, and the advanced search feature, powered by React's 'useState' and 'filter' method, enables users to easily query specific test names, panels, or organs. Medlab Help is a concise and powerful tool for accessing and understanding medical test information.",
+            "image": "./images/medLabHelp.png",
+            "demoLink": "youtube.com",
+            "githubLink": "github.com"
+        },
+        {
+            "title": "Inspiration Board",
+            "description": "Inspiration Board is a full-stack web-application that allows users to create and view board of inspiration to capture inspirations in detail. Users can also add, edit, and delete cards as well as give them a +1 like boost....tb continued",
+            "image": "./images/medLabHelp.png",
+            "demoLink": "youtube.com/placeholder",
+            "githubLink": "github.com"
+        }
+    ]
+}
