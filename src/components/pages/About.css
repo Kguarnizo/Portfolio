@@ -1,0 +1,88 @@
+.about-container {
+    width: 100%;
+    padding: 2rem;
+}
+
+#hi {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.about-me-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+    color: white;
+    padding: 2rem;
+    margin-bottom: 0;
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.about-me h2 {
+    padding-bottom: 1rem;
+}
+
+.about-img-container {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 1rem;
+}
+
+.about-img-container ul {
+    list-style: none;
+    display: flex;
+    gap: .75rem;
+    padding: 0; 
+    margin: 0;
+}
+
+/* .about-img-container li {
+    margin: 0;
+} */
+
+.about-img-container figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-img-container .about-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1rem;
+    min-width: 100px;
+}
+
+.about-img-container img:hover {
+    transform: scale(1.1);
+}
+
+.about-img-container figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+    transition: transform 0.3s ease-in-out;
+    background-color: #d80ed8b3;
+    border-radius: 1rem;
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .about-img-container figcaption {
+        font-size: .60rem;
+    }
+}

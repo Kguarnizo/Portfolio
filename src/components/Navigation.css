@@ -2,17 +2,20 @@
     background-color: #D80ED8;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: orange; */
-    background-color: inherit;
+    background-color: transparent;
     position: sticky;
     top: 0;
 }
 
-nav .title {
+.navbar.active{
+    background-color: red;
+}
+
+.navbar .title {
     font-size: 1rem;
     margin: 1rem;
     font-weight: bold;
@@ -20,17 +23,17 @@ nav .title {
     color:white;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
 }
 
-nav ul li {
+.navbar ul li {
     list-style: none;
     font-size: 1rem;
     font-weight: bold;
 }
 
-nav ul li a {
+.navbar ul li a {
     display: block;
     text-decoration: none;
     color: white;
@@ -39,11 +42,11 @@ nav ul li a {
     border-radius: 0.6rem;
 }
 
-nav ul li a:not(.active):hover {
+.navbar ul li a:not(.active):hover {
     color: #D80ED8;
 }    
 
-nav .menu {
+.navbar .menu {
     display: none;
     position: absolute;
     top: 1.2rem;
@@ -54,7 +57,7 @@ nav .menu {
     height: 1rem;
 }
 
-nav .menu span{
+.navbar .menu span{
     height: 0.2rem;
     width: 75%;
     background-color: white;
@@ -62,16 +65,16 @@ nav .menu span{
 }
 
 @media (max-width: 992px) {
-    nav .menu {
+    .navbar .menu {
         display:flex;
     }
 
-    nav {
+    .navbar {
         flex-direction: column;
         align-items: start;
     }
 
-    nav ul {
+    .navbar ul {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -84,22 +87,22 @@ nav .menu span{
         background-color: orange; 
     }
 
-    nav ul.open {
+    .navbar ul.open {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    nav ul li {
+    .navbar ul li {
         width: auto;
         text-align: center;
     }
 
-    nav ul li a {
+    .navbar ul li a {
         margin: 0.2rem 0.5rem;
     }
 
-    nav .menu {
+    .navbar .menu {
         position: fixed;
         z-index: 1;
     }
