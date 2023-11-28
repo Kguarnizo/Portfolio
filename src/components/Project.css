@@ -7,9 +7,9 @@
     border-radius: 1rem;
     width: 100%;
   }
-  
+
 .project-item img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   border-radius: .8rem;
 }

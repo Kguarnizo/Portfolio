@@ -1,6 +1,6 @@
 .about-container {
     width: 100%;
-    padding: 2rem 8rem;
+    padding: 2rem 4rem;
 }
 
 #hi {
@@ -55,7 +55,7 @@
     display: flex;
 	justify-content: center;
 	align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .about-img-container ul {
@@ -68,6 +68,7 @@
 
 .about-img-container figure {
     position: relative;
+    overflow: hidden;
 }
 
 .about-img-container .about-img {
@@ -95,10 +96,9 @@
 } 
 
 
-
 @media only screen and (max-width: 600px) {
     .about-container {
-        padding: 2rem;
+        padding: 1rem;
     }
     
     .about-img-container figcaption {

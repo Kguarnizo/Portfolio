@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import { FaPython, FaReact, FaBootstrap, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { BiLogoDjango, BiLogoPostgresq, BiLogoPostgresql, BiLogoTypescript} from "react-icons/bi";
+import { BiLogoDjango, BiLogoPostgresql, BiLogoTypescript} from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiSqlalchemy } from "react-icons/si";
 

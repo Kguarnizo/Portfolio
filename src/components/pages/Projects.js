@@ -26,9 +26,7 @@ const Projects = ({projectList}) => {
     return (
         <div className="projects-container">
             <h2 id="projects">My Projects</h2>
-            <div className="projects-list-container">
                 <ul>{getProjectListJSX(projectList)}</ul>
-            </div>
         </div>
         );
 }

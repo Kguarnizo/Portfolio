@@ -1,19 +1,17 @@
 .projects-container {
     width: 100%;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
     color: white;
 }
 
 #projects{
     font-size: 3rem;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
-.projects-list-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    padding: 2rem;
+@media only screen and (max-width: 600px) {
+    .projects-container {
+        padding: 1rem;
+    }
 }
-
