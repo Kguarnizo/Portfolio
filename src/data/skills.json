@@ -1,0 +1,35 @@
+{
+    "skills" : [
+        {
+            "type": "Font-End Development",
+            "techStack": [
+                "Javascript",
+                "Typescript",
+                "React",
+                "Bootstrap",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "type": "Back-End Development",
+            "techStack": [
+                "Python",
+                "Django",
+                "Flask",
+                "PostgreSQL",
+                "SQLAlchemy"
+            ]
+        },
+        {
+            "type": "Other",
+            "techStack": [
+                "Git",
+                "Postman",
+                "Github",
+                "Render",
+                "Netlify"
+            ]
+        }
+    ]
+}
