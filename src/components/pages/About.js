@@ -4,10 +4,11 @@ import './About.css';
 const About = () => {
     return (
         <div className="about-container">
-            <div id="hi" className="animated bounce">
-                    <h2>Hi, I'm Katherine :)</h2>
-            </div>
+            <h2>About Me</h2>
             <div className="about-me-desc">
+            <div id="hi" className="animated bounce">
+                <h3>Hi, I'm Katherine :)</h3>
+            </div>
                 <p>I am currently a student at Ada Developers Academy, a highly selective tuition-free full-stack software engineering program with an acceptance rate of less than 10%, dedicated to empowering women and gender-expansive individuals looking to break into the tech industry.</p>
                 <br></br>
                 <p>With over six years of experience as a Product Developer in the fashion industry, I seamlessly transitioned from developing women's apparel to crafting web solutions. My background goes beyond creativity; it involves a strategic and solution-oriented mindset as I previously worked extensively with cost, ensuring all product met costing targets. This experience honed my ability to think creatively about alternate solutions— a skill I find rewarding in programming, where there's always more than one solution to a problem.</p>

@@ -3,9 +3,16 @@
     padding: 2rem 4rem;
 }
 
-#hi {
+.about-container h2{
+    text-align: center;
     padding-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: white;
+}
+
+#hi {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     color:white;
     text-wrap: balance;
@@ -55,7 +62,7 @@
     display: flex;
 	justify-content: center;
 	align-items: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .about-img-container ul {
@@ -69,6 +76,7 @@
 .about-img-container figure {
     position: relative;
     overflow: hidden;
+    border-radius: 1rem;
 }
 
 .about-img-container .about-img {
