@@ -15,35 +15,55 @@ import { SiSqlalchemy, SiPostman, SiRender } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa6";
 
 const iconsMap = {
-    Python: <FaPython icon={FaPython} />,
-    Django: <BiLogoDjango icon={BiLogoDjango} />,
-    Flask: <BiLogoFlask icon={BiLogoFlask} />,
-    PostgreSQL: <BiLogoPostgresql icon={BiLogoPostgresql} />,
-    TypeScript: <BiLogoTypescript icon={BiLogoTypescript} />,
-    React: <FaReact icon={FaReact} />,
-    Bootstrap: <FaBootstrap icon={FaBootstrap} />,
-    HTML: <FaHtml5 icon={FaHtml5} />,
-    CSS: <FaCss3Alt icon={FaCss3Alt} />,
-    Javascript: <IoLogoJavascript icon={IoLogoJavascript} />,
-    SQLAlchemy: <SiSqlalchemy icon={SiSqlalchemy} />,
-    Git: <FaGitAlt icon={FaGitAlt} />,
-    Github: <IoLogoGithub icon={IoLogoGithub} />,
-    Postman: <SiPostman icon={SiPostman} />,
-    Render: <SiRender icon={SiRender} />,
-    Netlify: <BiLogoNetlify icon={BiLogoNetlify} />
+    Python: <FaPython />,
+    Django: <BiLogoDjango />,
+    Flask: <BiLogoFlask />,
+    PostgreSQL: <BiLogoPostgresql />,
+    TypeScript: <BiLogoTypescript />,
+    React: <FaReact />,
+    Bootstrap: <FaBootstrap />,
+    HTML: <FaHtml5 />,
+    CSS: <FaCss3Alt />,
+    Javascript: <IoLogoJavascript />,
+    SQLAlchemy: <SiSqlalchemy />,
+    Git: <FaGitAlt />,
+    Github: <IoLogoGithub />,
+    Postman: <SiPostman />,
+    Render: <SiRender />,
+    Netlify: <BiLogoNetlify />
 };
 
-const getIconComponent = (icon) => {
-  return iconsMap[icon];
+const getIcon = (techName) => {
+  return iconsMap[techName];
 };
 
 const getIconsJSX = ({techStack}) => {
   return techStack.map((icon, index) => {
       return (
           <div key={index}>
-              {getIconComponent(icon)}
+              {getIcon(icon)}
           </div>
       );
+  });
+};
+
+const getIconWithName = (techName) => {
+  const IconOnly = iconsMap[techName];
+  return (
+    <>
+    <div id="tech-name">{techName}</div>
+    <div id="icon-only">{IconOnly}</div>
+    </>
+  );
+};
+
+const getIconsJSXWithName = ({techStack}) => {
+  return techStack.map((icon, index) => {
+    return (
+      <div key={index}>
+          {getIconWithName(icon)}
+      </div>
+    );
   });
 };
 
@@ -55,7 +75,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects projectList={projectData.projects} getIconsJSX={getIconsJSX}></Projects>} />
-      <Route path='/skills' element={<Skills skillList={skillsData.skills} getIconsJSX={getIconsJSX}></Skills>} />
+      <Route path='/skills' element={<Skills skillList={skillsData.skills} getIconsJSXWithName={getIconsJSXWithName}></Skills>} />
       <Route path='/contact' element={<Contact />} />
     </Routes>
     </div>

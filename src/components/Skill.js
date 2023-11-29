@@ -1,14 +1,21 @@
 import React from 'react';
 import './Project.css';
+import './Skill.css';
 
 
-const Skill = ({ type, techStack, getIconsJSX }) => {
+const Skill = ({ type, techStack, getIconsJSXWithName }) => {
+
+    const getIconsWithNameResult = getIconsJSXWithName({techStack});
 
     return (
-        <li>
+        <li className="skill-item">
         <h3>{type}</h3>
-        <div className="project-icons">
-                {getIconsJSX({techStack})}
+        <div className="skill-icons-container">
+            {getIconsWithNameResult.map((techIconName, index) => (
+            <div key={index} className="icon-container">
+            {techIconName}
+            </div>
+            ))}
         </div>
         </li>
     );

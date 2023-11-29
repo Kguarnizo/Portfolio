@@ -1,7 +1,8 @@
 import React from 'react';
 import Skill from '../Skill';
+import './Skills.css';
 
-const Skills = ({skillList, getIconsJSX }) => {
+const Skills = ({skillList, getIconsJSXWithName }) => {
 
     console.log("this is the list of projects", skillList)
 
@@ -12,7 +13,7 @@ const Skills = ({skillList, getIconsJSX }) => {
                     <Skill 
                         type={skill.type}
                         techStack={skill.techStack}
-                        getIconsJSX={(techStack) => getIconsJSX(techStack)}
+                        getIconsJSXWithName={(techStack) => getIconsJSXWithName(techStack)}
                     />
                 </div>
             );
