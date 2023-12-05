@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 
 const About = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const handleIsLoaded = () => {
+        setIsLoaded(true)
+    }
+
     return (
         <div className="about-container">
             <h2>About Me</h2>
@@ -21,21 +27,39 @@ const About = () => {
             <ul>
                 <li>
                 <figure>
-                <img src="/images/ada.png" alt="me" className="about-img"/>
-                <figcaption>Ada Acceptance Letter</figcaption>
+                <img 
+                    src="/images/ada.png" 
+                    alt="me" 
+                    className="about-img"
+                    onLoad={() => handleIsLoaded()}
+                    />
+                {isLoaded ? (<figcaption>Ada Acceptance Letter</figcaption>
+                ) : null }
                 </figure>
                 </li>
                 <li>
                     <figure>
-                <img src="/images/travel.png" alt="me" className="about-img"/>
-                    <figcaption>Exploring Ancient Egypt</figcaption>
-                    </figure>
+                <img 
+                    src="/images/travel.png" 
+                    alt="me" 
+                    className="about-img"
+                    onLoad={() => handleIsLoaded()}
+                    />
+                {isLoaded ? (<figcaption>Exploring Ancient Egypt</figcaption>
+                ) : null}
+                </figure>
                 </li>
                 <li>
                     <figure>
-                <img src="/images/sunny.png" alt="me" className="about-img"/>
-                    <figcaption>Sunny at the Lake</figcaption>
-                    </figure>
+                <img 
+                    src="/images/sunny.png" 
+                    alt="me" 
+                    className="about-img"
+                    onLoad={() => handleIsLoaded()}
+                    />
+                {isLoaded ? (<figcaption>Sunny at the Lake</figcaption>
+                ) : null}
+                </figure>
                 </li>
             </ul>
         </div>

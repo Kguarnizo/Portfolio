@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { MdSimCardDownload } from "react-icons/md";
-import resume from '../../KATHERINE_GUARNIZO_RESUME.pdf';
+import resume from '../../../KATHERINE_GUARNIZO_RESUME.pdf';
 import './Home.css'
 
 const Home = () => {

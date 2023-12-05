@@ -1,11 +1,11 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import Navigation from './components/Navigation';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Projects from './components/pages/Projects';
-import Skills from './components/pages/Skills';
-import Contact from './components/pages/Contact';
+import Navigation from './components/Navigation/Navigation';
+import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
+import Projects from './components/pages/Projects/Projects';
+import Skills from './components/pages/Skills/Skills';
+import Contact from './components/pages/Contact/Contact';
 import projectData from './data/projects.json';
 import skillsData from './data/skills.json';
 import { FaPython, FaReact, FaBootstrap, FaHtml5, FaCss3Alt } from "react-icons/fa";
