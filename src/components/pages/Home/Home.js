@@ -9,9 +9,10 @@ const Home = () => {
 
     return (
         <div className="home-container">
+        <div className="home-content">
             <div className="home-desc">
-                <h1 id="self-name">Katherine Guarnizo</h1>
-                <p id="self-title">Full-Stack Software Engineer</p>
+                <h1 className="title">Katherine Guarnizo</h1>
+                    <p className="subtitle">Full-Stack Software Engineer</p>
                 <div className="social-container">
                     <ul>
                         <li>
@@ -44,9 +45,10 @@ const Home = () => {
                 </a>
                 </div>
             </div>
-            <div className="home-img">
-            <img src="/images/me.png" alt="me"/>
+            <div className="img-container">
+            <img src="/images/me.png" alt="me" className="home-img"/>
             </div>
+        </div>
         </div>
     );    
 }
