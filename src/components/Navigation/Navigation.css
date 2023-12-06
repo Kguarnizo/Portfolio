@@ -12,8 +12,8 @@
     z-index: 1;
 }
 
-.navbar.active{
-    background-color: red;
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
 }
 
 .navbar .title {
@@ -22,6 +22,11 @@
     font-weight: bold;
     text-decoration: none;
     color:white;
+}
+
+.navbar #logo-period {
+    color: purple;
+    font-size: 1rem;
 }
 
 .navbar ul {
@@ -38,7 +43,7 @@
     display: block;
     text-decoration: none;
     color: white;
-    margin: 0 1.6rem 0 0;
+    margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.6rem;
 }
@@ -50,7 +55,7 @@
 .navbar .menu {
     display: none;
     position: absolute;
-    top: 1.2rem;
+    top: 1rem;
     right: 1rem;
     flex-direction: column;
     justify-content: space-between;
