@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
 
 const Contact = () => {
@@ -31,7 +33,7 @@ const Contact = () => {
         if (!templateParams.from_email.trim()) {
             validationErrors.from_email = "⚠ email is required"
         } else if (!/\S+@\S+\.\S+/.test(templateParams.from_email)) {
-            validationErrors.from_email = "email is not valid"
+            validationErrors.from_email = "⚠ email is not valid"
         }
 
         if (!templateParams.message.trim()) {
@@ -46,7 +48,17 @@ const Contact = () => {
                     setName("")
                     setEmail("");
                     setMessage("");
-                    alert(`Thank you, ${templateParams.from_name}! Your message has been sent`);
+                    toast.success(`Thank you, ${templateParams.from_name}! Your message has been sent`, {
+                        position: "top-center",
+                        autoClose: 3000,
+                        hideProgressBar: true,
+                        closeOnClick: false,
+                        pauseOnHover: true,
+                        draggable: false,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Flip,
+                        });
                 })
                 .catch((error) => {
                     console.error("Error sending email", error);
@@ -85,8 +97,9 @@ const Contact = () => {
                     >
                     </textarea>
                     {errors.message && <span className="error-message">{errors.message}</span>}
+                    <ToastContainer closeButton={false}/>
                     <div className="form-button-container">
-                    <button type="submit">Send Email</button>
+                        <button type="submit">Send Email</button>
                     </div>
                 </form>
             </div>

@@ -50,6 +50,8 @@
     background: none;
     border: 1px solid white;
     border-radius: .25rem;
+    color: #d80ed8b3;
+    font-weight: bold;
 }
 
 .contact-form textarea {
@@ -80,6 +82,7 @@
     font-size: .70rem;
     padding-left: .5rem;
 }
+
 
 @media only screen and (max-width: 800px) {
     .total-form-container{
