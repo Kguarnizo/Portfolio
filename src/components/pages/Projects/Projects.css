@@ -1,6 +1,6 @@
 .projects-container {
-    width: 100%;
-    padding: 2rem 4rem;
+    max-width: 100%;
+    padding: 2rem 0;
     color: white;
 }
 
@@ -10,7 +10,13 @@
     padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
+.project-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
     .projects-container {
         padding: 1rem;
     }

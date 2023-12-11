@@ -9,7 +9,7 @@ const Projects = ({ projectList, getIconsJSX }) => {
     const getProjectListJSX = (projectList) => {
         return projectList.map((project, index) => {
             return (
-                <div key={index}>
+                <div key={index} className="project-list-item">
                     <Project 
                         title={project.title} 
                         description={project.description}
@@ -26,7 +26,7 @@ const Projects = ({ projectList, getIconsJSX }) => {
 
     return (
         <div className="projects-container">
-            <h2 id="projects">My Projects</h2>
+            <h2 id="projects">Projects</h2>
                 <ul>{getProjectListJSX(projectList)}</ul>
         </div>
         );

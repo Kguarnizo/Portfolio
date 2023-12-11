@@ -9,7 +9,7 @@ const Skills = ({skillList, getIconsJSXWithName }) => {
     const getSkillListJSX = (skillList) => {
         return skillList.map((skill, index) => {
             return (
-                <div key={index}>
+                <div key={index} className="skill-list-item">
                     <Skill 
                         type={skill.type}
                         techStack={skill.techStack}
@@ -22,7 +22,7 @@ const Skills = ({skillList, getIconsJSXWithName }) => {
 
     return (
         <div className="skills-container">
-            <h2 id="skills"> My Technical Skills</h2>
+            <h2 id="skills">Technical Skills</h2>
             <ul>{getSkillListJSX(skillList)}</ul>
         </div>
     );

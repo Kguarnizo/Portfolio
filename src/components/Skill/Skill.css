@@ -5,7 +5,7 @@
     padding: 2rem;
     margin-bottom:2rem;
     border-radius: 1rem;
-    width: 100%;
+    width: 50%;
 }
 
 .skill-item h3 {
@@ -29,4 +29,17 @@
 
 #icon-only {
     font-size:2rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .skill-item {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-item {
+        width: 90%;
+    }
 }

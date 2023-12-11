@@ -69,15 +69,17 @@ const getIconsJSXWithName = ({techStack}) => {
 
 function App() {
   return (
-    <div className="App">
-    <Navigation />
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/projects' element={<Projects projectList={projectData.projects} getIconsJSX={getIconsJSX}></Projects>} />
-      <Route path='/skills' element={<Skills skillList={skillsData.skills} getIconsJSXWithName={getIconsJSXWithName}></Skills>} />
-      <Route path='/contact' element={<Contact />} />
-    </Routes>
+    <div>
+      <Navigation />
+      <div className="app-pages">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects projectList={projectData.projects} getIconsJSX={getIconsJSX}></Projects>} />
+          <Route path='/skills' element={<Skills skillList={skillsData.skills} getIconsJSXWithName={getIconsJSXWithName}></Skills>} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
 }

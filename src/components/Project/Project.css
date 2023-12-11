@@ -5,7 +5,7 @@
     padding: 2rem;
     margin-bottom:2rem;
     border-radius: 1rem;
-    width: 100%;
+    width: 50%;
   }
 
 .project-item img {
@@ -17,10 +17,12 @@
 .project-item h3 {
   font-size: 1.5rem;
   padding: .5rem;
+  /* text-align: center; */
 }
 
 .project-item p {
   padding: .5rem;
+  text-align: start;
 }
 
 .project-icons {
@@ -38,13 +40,32 @@
   padding-bottom: 0;
 }
 
-  #demo, #github {
-    text-decoration: none;
-    color: white;
-    font-size: .85rem;
-    font-weight: bold;
-    border: 0.8rem solid rgba(216, 14, 216, 0.613);
-    background: #D80ED8;
-    border-radius: 5rem;
-    width: 10rem;
+#demo, #github {
+  text-decoration: none;
+  color: white;
+  font-size: .85rem;
+  font-weight: bold;
+  border: 0.8rem solid rgba(216, 14, 216, 0.613);
+  background: #D80ED8;
+  border-radius: 5rem;
+  width: 10rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-item {
+    width: 75%;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .project-item {
+    width: 90%;
+  }
+
+  .project-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: .5rem;
+  }
+}

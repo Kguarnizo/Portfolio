@@ -40,7 +40,8 @@ const Contact = () => {
             <h2>Contact Me</h2>
             <div className="contact-form-container">
                 <p>
-                "Have a question, a project idea, or just want to chat? I'm here for it! I'm always looking forward to connecting with new people and exploring exciting opportunities. Let's connect and start the conversation today; I'm eager to hear your thoughts and explore how we can collaborate. Let's make things happen!"                </p>
+                Have a question, a project idea, or just want to chat? I'm here for it! I'm always looking forward to connecting with new people and exploring exciting opportunities. Let's connect and start the conversation today; I'm eager to hear your thoughts and explore how we can collaborate.               
+                </p>
                 <form onSubmit={handleSubmit} className="contact-form">
                     <input
                         type="text"
