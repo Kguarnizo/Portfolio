@@ -14,7 +14,6 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-    
     const serviceId = "service_y49crmf";
     const templateId = "template_35eepnd";
     const publicKey = "Sl-yWOuvWZyfBdUKy";
