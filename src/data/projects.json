@@ -2,7 +2,7 @@
     "projects" : [
         {
             "title": "MedLab Help",
-            "description": "Medlab Help is a user-friendly web app that simplifies medical jargon, focusing on routine medical tests. Built on RESTful API principles, it efficiently retrieves lab test data from PostgreSQL, including 100+ records from external CSV files. The responsive design ensures a seamless user experience, and the advanced search feature, powered by React's 'useState' and 'filter' method, enables users to easily query specific test names, panels, or organs. Medlab Help is a concise and powerful tool for accessing and understanding medical test information.",
+            "description": "Medlab Help is a full-stack user-friendly web app that simplifies medical jargon, with a focus on routine medical tests. Following RESTful API principles, it efficiently retrieves lab test data from PostgreSQL, aggregating over 100 records from external CSV files. The responsive design guarantees a smooth user experience, while the advanced search feature, driven by React's 'useState' and 'filter' method, empowers users to effortlessly query specific test names, panels, or organs. Medlab Help stands out as a concise and robust tool for accessing and comprehending essential medical test information.",
             "image": "./images/medLabHelp.png",
             "demoLink": "https://www.youtube.com/watch?v=87Zy7ZMlre4",
             "githubLink": "github.com",
@@ -19,7 +19,7 @@
         },
         {
             "title": "Inspiration Board",
-            "description": "Inspiration Board is a full-stack web-application that allows users to create and view board of inspiration to capture inspirations in detail. Users can also add, edit, and delete cards as well as give them a +1 like boost....tb continued",
+            "description": "Inspiration Board, a full-stack web app, enables users to create, view, and manage inspiration boards with detailed cards. RESTful API conventions are followed for adding, editing, deleting cards, and giving +1 likes. Error handling for `axios.post` requests capture and update state with API validation errors, showcasing informative error messages through a dedicated error component. Key functionality includes sorting cards in ascending order by properties (message, ID, likes). Users can easily select sorting criteria via a dropdown menu, dynamically re-rendering the sorted card array. This enhances user experience with clear error feedback and flexible data organization.",
             "image": "./images/inspirationBoard.png",
             "demoLink": "https://www.youtube.com/watch?v=szsf7IeX-F0",
             "githubLink": "github.com",
