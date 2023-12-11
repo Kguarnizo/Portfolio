@@ -48,14 +48,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     text-wrap: wrap;
     color: white;
     padding: 2rem;
     margin-bottom: 0;
     border: 1px solid white;
     border-radius: 1rem;
-    width: 50%;
+    width: 60%;
 }
 
 .about-me h2 {
@@ -67,7 +66,7 @@
 	justify-content: center;
 	align-items: center;
     padding: 2rem;
-    width: 55%;
+    width: 65%;
 }
 
 .about-img-container ul {
