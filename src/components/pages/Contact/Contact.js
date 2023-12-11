@@ -7,9 +7,11 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [errors, setErrors] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
     
     const serviceId = "service_y49crmf";
     const templateId = "template_35eepnd";
@@ -22,17 +24,34 @@ const Contact = () => {
         message: message,
     };
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-        .then((response) => {
-            console.log('Email sent successfully!', response);
-            setName("")
-            setEmail("");
-            setMessage("");
-        })
-        .catch((error) => {
-            console.error("Error sending email", error);
-        });
-    
+    const validationErrors = {}
+        if (!templateParams.from_name.trim()) {
+            validationErrors.from_name = "⚠ name is required"
+        }
+        if (!templateParams.from_email.trim()) {
+            validationErrors.from_email = "⚠ email is required"
+        } else if (!/\S+@\S+\.\S+/.test(templateParams.from_email)) {
+            validationErrors.from_email = "email is not valid"
+        }
+
+        if (!templateParams.message.trim()) {
+            validationErrors.message = "⚠ message is required"
+        }
+        setErrors(validationErrors);
+
+        if (Object.keys(validationErrors).length === 0) {
+            emailjs.send(serviceId, templateId, templateParams, publicKey)
+                .then((response) => {
+                    console.log('Email sent successfully!', response);
+                    setName("")
+                    setEmail("");
+                    setMessage("");
+                    alert(`Thank you, ${templateParams.from_name}! Your message has been sent`);
+                })
+                .catch((error) => {
+                    console.error("Error sending email", error);
+                });
+        }
     };
 
     return (
@@ -49,12 +68,14 @@ const Contact = () => {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
+                        {errors.from_name && <span className="error-message">{errors.from_name}</span>}
                     <input
                         type="email"
                         placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
+                        {errors.from_email && <span className="error-message">{errors.from_email}</span>}
                     <textarea
                         cols="30"
                         rows="10"
@@ -63,6 +84,7 @@ const Contact = () => {
                         onChange={(e) => setMessage(e.target.value)}
                     >
                     </textarea>
+                    {errors.message && <span className="error-message">{errors.message}</span>}
                     <div className="form-button-container">
                     <button type="submit">Send Email</button>
                     </div>

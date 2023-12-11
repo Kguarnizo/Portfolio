@@ -74,6 +74,13 @@
     font-weight: bold;
 } 
 
+.error-message {
+    color: red;
+    text-align: start;
+    font-size: .70rem;
+    padding-left: .5rem;
+}
+
 @media only screen and (max-width: 800px) {
     .total-form-container{
         padding: 1rem;
