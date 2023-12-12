@@ -116,6 +116,10 @@
     .about-container {
         padding: 1rem;
     }
+
+    .about-img-container {
+        width: 90%;
+    }
     
     .about-img-container figcaption {
         font-size: .50rem;
@@ -128,6 +132,6 @@
     }
 
     .about-img-container {
-        width: 90%;
+        width: 95%;
     }
 }
