@@ -27,9 +27,12 @@
 .project-icons {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
   padding: .5rem;
 }
+
+.project-icons svg{
+  font-size: 2rem;
+} 
 
 .project-links {
   display: flex;

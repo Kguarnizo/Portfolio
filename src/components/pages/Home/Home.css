@@ -61,6 +61,10 @@
     font-size: 2rem;
 }
 
+svg.social-icon{
+    font-size: 2rem;
+}
+
 .more-links {
     display: flex;
     justify-content: center;
