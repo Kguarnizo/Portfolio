@@ -37,7 +37,8 @@ const Home = () => {
                 </div>
                 <div className="more-links">
                 <Link to="/about" id="learn-more">
-                    Learn More ➪
+                    Learn More 
+                    ➪
                 </Link>
                 <a href={resume} target="_blank" rel="noopener noreferrer" id="view-resume">
                     View Resume 
