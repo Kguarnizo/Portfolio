@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   padding: .5rem;
+  gap: .5rem;
 }
 
 .project-icons svg{

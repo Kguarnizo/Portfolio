@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { MdSimCardDownload } from "react-icons/md";
+import { TbArrowBigRightLine } from "react-icons/tb";
 import resume from '../../../KATHERINE_GUARNIZO_RESUME.pdf';
 import './Home.css'
 
@@ -38,7 +39,7 @@ const Home = () => {
                 <div className="more-links">
                 <Link to="/about" id="learn-more">
                     Learn More 
-                    ➪
+                    <TbArrowBigRightLine />
                 </Link>
                 <a href={resume} target="_blank" rel="noopener noreferrer" id="view-resume">
                     View Resume 

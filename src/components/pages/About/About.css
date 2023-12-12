@@ -108,6 +108,12 @@
     background-color: #d80ed8b3;
 } 
 
+@media only screen and (max-width: 992px) {
+    .about-img-container figcaption {
+        font-size: .70rem;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .about-me-desc {
         width: 85%;
