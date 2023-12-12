@@ -58,17 +58,17 @@
   .project-item {
     width: 75%;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .project-item {
-    width: 90%;
-  }
 
   .project-icons {
     display: flex;
     justify-content: center;
     font-size: 2rem;
     padding: .5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project-item {
+    width: 90%;
   }
 }

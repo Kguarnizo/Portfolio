@@ -71,6 +71,10 @@ svg.social-icon{
     gap: 1rem;
 }
 
+.more-links a svg {
+    margin-right: .5rem;
+}
+
 #learn-more, #view-resume {
     text-decoration: none;
     color: white;
