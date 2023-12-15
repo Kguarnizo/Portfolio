@@ -13,7 +13,7 @@ const Project = ({ title, description, image, demoLink, githubLink, techStack, g
             </div>
             <div className="project-links">
                 <a 
-                    id="demo"
+                    className="project-link-buttons"
                     target="_blank" 
                     rel="noopener noreferrer"
                     href={demoLink}
@@ -21,7 +21,7 @@ const Project = ({ title, description, image, demoLink, githubLink, techStack, g
                 Demo
                 </a>
                 <a
-                    id="github"
+                    className="project-link-buttons"
                     target="_blank" 
                     rel="noopener noreferrer"
                     href={githubLink}

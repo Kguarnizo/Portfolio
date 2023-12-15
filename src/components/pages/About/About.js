@@ -33,7 +33,7 @@ const About = () => {
                     className="about-img"
                     onLoad={() => handleIsLoaded()}
                     />
-                {isLoaded ? (<figcaption>Ada Acceptance Letter</figcaption>
+                {isLoaded ? (<figcaption>Ada's Acceptance</figcaption>
                 ) : null }
                 </figure>
                 </li>
@@ -45,7 +45,7 @@ const About = () => {
                     className="about-img"
                     onLoad={() => handleIsLoaded()}
                     />
-                {isLoaded ? (<figcaption>Exploring Ancient Egypt</figcaption>
+                {isLoaded ? (<figcaption>Ancient Egypt</figcaption>
                 ) : null}
                 </figure>
                 </li>

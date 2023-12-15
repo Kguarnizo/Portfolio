@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 85px);
     box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
     color: white;
     padding: .5rem 0;
@@ -71,11 +71,10 @@ svg.social-icon{
     gap: 1rem;
 }
 
-.more-links a svg {
-    margin-right: .5rem;
-}
-
-#learn-more, #view-resume {
+.home-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     font-size: .85rem;
@@ -85,6 +84,10 @@ svg.social-icon{
     border-radius: 5rem;
     width: 10rem;
     margin-bottom: 3rem;
+}
+
+.home-icons svg {
+    margin-left: .3rem;
 }
 
 .home-img {
@@ -117,6 +120,12 @@ svg.social-icon{
     .home-desc, .img-container {
         width: 75%;
     }
+
+    .home-icons {
+        font-size: .7rem;
+        width: 8rem;
+    }
+    
 
 }
 

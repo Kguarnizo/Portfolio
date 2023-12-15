@@ -37,11 +37,11 @@ const Home = () => {
                         </ul>
                 </div>
                 <div className="more-links">
-                <Link to="/about" id="learn-more">
+                <Link to="/about" className="home-icons">
                     Learn More 
                     <TbArrowBigRightLine />
                 </Link>
-                <a href={resume} target="_blank" rel="noopener noreferrer" id="view-resume">
+                <a href={resume} target="_blank" rel="noopener noreferrer" className="home-icons">
                     View Resume 
                     <MdSimCardDownload />
                 </a>
