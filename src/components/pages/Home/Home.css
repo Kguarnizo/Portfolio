@@ -1,140 +1,138 @@
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    height: calc(100vh - 85px);
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: calc(100vh - 85px);
+  box-sizing: border-box;
 }
 
 .home-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .home-desc {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .title {
-    font-size: 3rem;
-    font-weight: bolder;
-    color: white;
-    padding: .5rem 0;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  padding: 0.5rem 0;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: white;
-    padding-bottom: .5rem;
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 0.5rem;
 }
 
 .img-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: .5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .social-container ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-container ul li a {
-    text-decoration: none;
-    color: white;
-    padding: .2rem;
-    font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem;
+  font-size: 2rem;
 }
 
-svg.social-icon{
-    font-size: 2rem;
+svg.social-icon {
+  font-size: 2rem;
 }
 
 .more-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .home-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: .85rem;
-    font-weight: bold;
-    border: 0.8rem solid rgba(216, 14, 216, 0.613);
-    background: #D80ED8;
-    border-radius: 5rem;
-    width: 10rem;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 0.8rem solid rgba(216, 14, 216, 0.613);
+  background: #d80ed8;
+  border-radius: 5rem;
+  width: 10rem;
+  margin-bottom: 3rem;
 }
 
 .home-icons svg {
-    margin-left: .3rem;
+  margin-left: 0.3rem;
 }
 
 .home-img {
-    max-width: 75%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(199, 114, 196, 0.477);
+  max-width: 75%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(199, 114, 196, 0.477);
 }
 
 @media only screen and (max-width: 992px) {
-    .home-container {
-        width: auto; 
-        height: auto; 
-        padding: 1rem; 
-    }
+  .home-container {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+  }
 
-    .home-content {
-        flex-direction: column;
-        text-align: center; 
-        margin-top: 2.5rem;
-    }
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
 
-    .home-desc {
-        order: 2; 
-    }
+  .home-desc {
+    order: 2;
+  }
 
-    .img-container {
-        order: 1;
-    }
+  .img-container {
+    order: 1;
+  }
 
-    .home-desc, .img-container {
-        width: 75%;
-    }
+  .home-desc,
+  .img-container {
+    width: 75%;
+  }
 
-    .home-icons {
-        font-size: .7rem;
-        width: 8rem;
-    }
-    
-
+  .home-icons {
+    font-size: 0.7rem;
+    width: 8rem;
+  }
 }
 
 @media only screen and (max-width: 432px) {
-    .img-container{
-        margin-top: 3rem;
-    }
+  .img-container {
+    margin-top: 3rem;
+  }
 
-    .home-content {
-        margin-top: 0;
-    }
+  .home-content {
+    margin-top: 0;
+  }
 }

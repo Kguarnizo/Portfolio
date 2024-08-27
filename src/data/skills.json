@@ -1,35 +1,42 @@
 {
-    "skills" : [
-        {
-            "type": "Font-End Development",
-            "techStack": [
-                "Javascript",
-                "TypeScript",
-                "React",
-                "Bootstrap",
-                "HTML",
-                "CSS"
-            ]
-        },
-        {
-            "type": "Back-End Development",
-            "techStack": [
-                "Python",
-                "Django",
-                "Flask",
-                "PostgreSQL",
-                "SQLAlchemy"
-            ]
-        },
-        {
-            "type": "Other",
-            "techStack": [
-                "Git",
-                "Postman",
-                "Github",
-                "Render",
-                "Netlify"
-            ]
-        }
-    ]
+  "skills": [
+    {
+      "type": "Font-End Development",
+      "techStack": [
+        "Javascript",
+        "TypeScript",
+        "React",
+        "Bootstrap",
+        "HTML",
+        "CSS",
+        "Jest"
+      ]
+    },
+    {
+      "type": "Back-End Development",
+      "techStack": [
+        "Python",
+        "Java",
+        "Django",
+        "Flask",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "pytest",
+        "Junit"
+      ]
+    },
+    {
+      "type": "Other",
+      "techStack": [
+        "Git",
+        "Postman",
+        "Github",
+        "BitBucket",
+        "Jira",
+        "Confluence",
+        "Render",
+        "Netlify"
+      ]
+    }
+  ]
 }

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import './Navigation.css';
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [colorNav, setColorNav] = useState(false)
-  
+  const [colorNav, setColorNav] = useState(false);
+
   const toggleOpen = () => {
     setMenuOpen(!menuOpen);
   };
@@ -16,13 +16,13 @@ const Navigation = () => {
 
   const changeColor = () => {
     if (window.scrollY >= 50) {
-      setColorNav(true)
+      setColorNav(true);
     } else {
-      setColorNav(false)
+      setColorNav(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", changeColor)
+  window.addEventListener("scroll", changeColor);
 
   const navbarClass = `navbar ${colorNav ? "scrolled" : ""}`;
 
@@ -32,25 +32,33 @@ const Navigation = () => {
         KatherineGuarnizo
         <span id="logo-period">.</span>
       </Link>
-    <div className="menu" onClick={toggleOpen}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul className={menuOpen ? "open" : ""}>
-      <li>
-          <NavLink to="/about" onClick={closeMenu}>about</NavLink>
-      </li>
-      <li>
-          <NavLink to="/projects" onClick={closeMenu}>projects</NavLink>
-      </li>
-      <li>
-          <NavLink to="/skills" onClick={closeMenu}>skills</NavLink>
-      </li>
-      <li>
-          <NavLink to="/contact" onClick={closeMenu}>contact</NavLink>
-      </li>
-    </ul>
+      <div className="menu" onClick={toggleOpen}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
+        <li>
+          <NavLink to="/about" onClick={closeMenu}>
+            about
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects" onClick={closeMenu}>
+            projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/skills" onClick={closeMenu}>
+            skills
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" onClick={closeMenu}>
+            contact
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };

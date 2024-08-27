@@ -1,23 +1,23 @@
 .skills-container {
-    max-width: 100%;
-    padding: 2rem 0;
-    color: white;
+  max-width: 100%;
+  padding: 2rem 0;
+  color: white;
 }
 
-#skills{
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 2rem;
+#skills {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .skill-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
-    .skills-container {
-        padding: 1rem;
-    }
+  .skills-container {
+    padding: 1rem;
+  }
 }
