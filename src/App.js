@@ -37,6 +37,7 @@ import {
   SiJest,
   SiJunit5,
   SiPytest,
+  SiSpring,
 } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa6";
 
@@ -45,6 +46,7 @@ const iconsMap = {
   Python: <FaPython />,
   Django: <BiLogoDjango />,
   Flask: <BiLogoFlask />,
+  Spring: <SiSpring />,
   PostgreSQL: <BiLogoPostgresql />,
   TypeScript: <BiLogoTypescript />,
   React: <FaReact />,
