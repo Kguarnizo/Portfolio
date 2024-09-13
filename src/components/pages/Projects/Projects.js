@@ -3,8 +3,6 @@ import Project from "../../Project/Project";
 import "./Projects.css";
 
 const Projects = ({ projectList, getIconsJSX }) => {
-  console.log("this is the list of projects", projectList);
-
   const getProjectListJSX = (projectList) => {
     return projectList.map((project, index) => {
       return (
@@ -16,7 +14,7 @@ const Projects = ({ projectList, getIconsJSX }) => {
             demoLink={project.demoLink}
             githubLink={project.githubLink}
             techStack={project.techStack}
-            getIconsJSX={(techStack) => getIconsJSX(techStack)}
+            getIconsJSX={(techStack) => getIconsJSX(project.techStack)}
           />
         </div>
       );
