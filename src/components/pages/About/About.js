@@ -16,28 +16,31 @@ const About = () => {
           <h3>Hi, I'm Katherine :)</h3>
         </div>
         <p>
-          I am a software engineer with a background in fashion as a Product
-          Developer, bringing a unique blend of creative and analytical skills
-          to craft innovative solutions. My experience in fashion sharpened my
-          ability to think outside the box and explore alternate solutions—a
-          skill that seamlessly translates into programming, where multiple
-          solutions to a problem often exist.
+          I am a full-stack software engineer with a background in fashion as a
+          Product Developer, combining creative and analytical skills to deliver
+          innovative solutions. My experience in fashion sharpened my ability to
+          think outside the box and explore alternate solutions, skills I now
+          apply in programming, where there is never just one solution to a
+          problem.
         </p>
         <br></br>
         <p>
-          I am proudly trained in full stack development at Ada Developers
-          Academy, a highly selective tuition-free program with an acceptance
-          rate of less than 10%. During my internship at Oracle, I gained
-          hands-on experience contributing to projects, collaborating with
-          cross-functional teams, and applying my skills in Java, API
-          development, and React. This experience allowed me to further develop
-          my problem-solving and technical abilities.
+          I proudly trained at Ada Developers Academy, a highly selective,
+          tuition-free program with an acceptance rate of less than 10%. During
+          my recent internship at Oracle OCI (Oracle Cloud Infrastructure), I
+          optimized a tier zero service portal, gaining hands-on experience with
+          Java, Spring, Maven, TypeScript, and React. Currently, I am a
+          Hack.Diversity 2025 SWE Fellow, selected as one of 15 software
+          engineers from over 400+ applicants to gain hands-on experience,
+          participate in career-building opportunities, and receive mentorship
+          from industry professionals.
         </p>
         <br></br>
         <p>
-          My approach to work is rooted in collaboration, effective
-          communication, and a commitment to continuous learning. I look forward
-          to finding innovative solutions and making a meaningful impact.
+          My approach to work is grounded in collaboration, effective
+          communication, and a commitment to continuous learning. I am eager to
+          contribute and grow within a collaborative team, where I can build
+          impactful solutions.
         </p>
         <br></br>
         <p>
