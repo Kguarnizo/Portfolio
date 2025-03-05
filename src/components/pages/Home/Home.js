@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { MdSimCardDownload } from "react-icons/md";
 import { TbArrowBigRightLine } from "react-icons/tb";
-import resume from "../../../Katherine.Guarnizo.Resume.pdf";
+import resume from "../../../Resume-Katherine-Guarnizo.pdf";
 import "./Home.css";
 
 const Home = () => {

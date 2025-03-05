@@ -31,9 +31,7 @@ const About = () => {
           optimized a tier zero service portal, gaining hands-on experience with
           Java, Spring, Maven, TypeScript, and React. Currently, I am a
           Hack.Diversity 2025 SWE Fellow, selected as one of 15 software
-          engineers from over 400+ applicants to gain hands-on experience,
-          participate in career-building opportunities, and receive mentorship
-          from industry professionals.
+          engineers from over 400+ applicants.
         </p>
         <br></br>
         <p>
